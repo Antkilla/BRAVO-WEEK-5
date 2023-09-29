@@ -15,9 +15,13 @@ const ClickCounter = () => {
         <>
             <h2>Exercise 2</h2>
             <p>The current count is: {count}</p>
-            <button onClick={() => setCount(count + 1)}>Increment the count!</button>
+            <button style={{color: 'red'}} onClick={() => setCount(count + 1)}>Increment the count!</button>
             <button onClick={() => setCount(0)}>Reset the count!</button>
-        </>
+        
+            {/*display a paragraph that says "BIG" If count is above 10 and "SMALL" otherwise*/}
+            {/* <p>(count > 10 ? "BIG" : "SMALL")</p>*/}
+            <p>{count > 10 ? (count > 50 ? "HUGE" : "BIG"): "SMALL"}</p>
+        </> 
     )
 }
 
