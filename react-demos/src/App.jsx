@@ -1,6 +1,7 @@
 import './App.css';
 import ClickCounter from './ClickCounter';
 import HelloWorld from './HelloWorld';
+import RandomNumber from './RandomNumber';
 import ToggleText from './ToggleText';
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
       <HelloWorld />
       <ClickCounter/>
       <ToggleText/>
+      <RandomNumber/>
+      <>StringList</>
+      
     </div>
   );
 }
